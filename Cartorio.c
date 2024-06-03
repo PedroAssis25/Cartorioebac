@@ -129,7 +129,8 @@ int registro()//Função responsalvel por cadastrar os usuarios no sistema
 	printf("Escolha a opção que mais te agrada abaixo:\n\n");
 	printf("\t1- Registrar nomes\n");
 	printf("\t2- Consultar nomes\n");
-	printf("\t3- Deletar os nomes\n\n");
+	printf("\t3- Deletar os nomes\n");
+	printf("\t4- Sair do sistema\n\n");
 	printf("Qual opção você deseja?:\n\n");//Fim do menu
 	
 	scanf("%d",&opcao);//Opções possíveis 
@@ -158,6 +159,11 @@ int registro()//Função responsalvel por cadastrar os usuarios no sistema
      
      case 3:
      deletar();
+   	 break;
+   	 
+   	 case 4:
+   	 printf("Obrigado por utilizar o sistema!\n");
+   	 return 0;
    	 break;
    	 
    	 
